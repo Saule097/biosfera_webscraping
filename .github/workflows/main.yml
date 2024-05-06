@@ -1,8 +1,8 @@
-name: Hourly Python Script
+name: Ten-Minute Python Script
 
 on:
   schedule:
-    - cron: '0 * * * *'  # Runs every hour
+    - cron: '*/10 * * * *'  # Runs every 10 minutes
 
 jobs:
   run_script:
@@ -10,15 +10,15 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.9'  # Specify Python version
+          python-version: '3.9'
 
       - name: Install dependencies
-        run: pip install -r requirements.txt  # Install required packages
+        run: pip install -r requirements.txt
 
       - name: Run Python script
-        run: python main.py  # Replace 'script.py' with your Python script filename
+        run: python main.py
