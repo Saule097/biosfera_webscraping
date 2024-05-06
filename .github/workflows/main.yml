@@ -2,7 +2,7 @@ name: Ten-Minute Python Script
 
 on:
   schedule:
-    - cron: '*/10 * * * *'  # Runs every 10 minutes
+    - cron: '*/30 * * * *'  # Runs every 10 minutes
 
 jobs:
   run_script:
