@@ -22,11 +22,4 @@ jobs:
 
       - name: Run Python script
         run: python main.py
-      - name: Pushing the change
-        run: |
-          git config --global user.name "boleke"
-          git config --global user.email bolatraikhanov@gmail.com
-          git add .  # Add all changes to the staging area
-          git commit -m "Update products.cvs file"  # Commit changes with a descriptive message
-          git push  # Push changes to the remote repository
 
