@@ -2,11 +2,13 @@ name: Ten-Minute Python Script
 
 on:
   schedule:
-    - cron: '*/10 * * * *'  # Runs every 10 minutes
+    - cron: '*/5 * * * *'  # Runs every 10 minutes
 
 jobs:
   run_script:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout repository
