@@ -1,8 +1,8 @@
-name: Ten-Minute Python Script
+name: Thirty-Minute Run Python Script
 
 on:
   schedule:
-    - cron: '*/30 * * * *'  # Runs every 10 minutes
+    - cron: '*/30 * * * *'  # Runs every 30 minutes
 
 jobs:
   run_script:
