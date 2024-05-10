@@ -27,8 +27,8 @@ jobs:
 
       - name: Configure Git
         run: |
-          git config --global user.name "Boleke"
-          git config --global user.email "bolatraikhanov@gmail.com"
+          git config --global user.name "Darkie17"
+          git config --global user.email "batyrkhan17@gmail.com"
 
       - name: Commit CSV file
         run: |
